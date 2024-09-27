@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta name="author" content="Iria Freiheit" />
-<meta name="description" content="Dies ist eine fiktive Website über eine fiktive Fotografin namens Lea Marie.Das ist die Seite Über Mich" />
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="author" content="Iria Freiheit" />
+    <meta name="description" content="Dies ist eine fiktive Website über eine fiktive Fotografin namens Lea Marie.Das ist die Seite Über Mich" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 </head>
 <header>
-    <img src="images/logo.png" alt=Logo style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="images/logo.png" alt=Logo class="Logo">
         <nav>
             <li><a href="Über_mich.html"><h2>Über mich</h2></a></li>
             <li><a href="Galerie.html"><h2>Galerie</h2></a></li>
@@ -21,8 +18,8 @@
 <body>
     <section class="full_width">
         <p>Hi, ich bin Lea Marie, 26 Jahre alt und ausgebildete Fotografin. Schon als Kind habe ich meine Liebe zur Fotografie entdeckt, als ich die alte Kamera meines Vaters ausprobiert habe. Diese Leidenschaft hat mich nie losgelassen, und nach der Schule habe ich eine Ausbildung zur Fotografin gemacht. Heute arbeite ich freiberuflich und habe mich auf Porträts spezialisiert. Es begeistert mich, echte, ungestellte Momente einzufangen und Menschen so darzustellen, wie sie wirklich sind. Meine Kamera ist mein ständiger Begleiter, egal ob auf Reisen oder im Alltag. Am liebsten fotografiere ich draußen, wo das natürliche Licht meinen Bildern eine besondere Atmosphäre verleiht.<br>Neben der Fotografie liebe ich es, neue Orte zu entdecken und mich von unterschiedlichen Kulturen und Landschaften inspirieren zu lassen. Jede Reise bringt neue Geschichten und Begegnungen, die ich mit meiner Kamera festhalte. Ich bin ständig auf der Suche nach neuen Perspektiven und einzigartigen Motiven. Außerdem arbeite ich eng mit meinen Kunden zusammen, um ihre Visionen und Wünsche in meinen Bildern zum Leben zu erwecken. Kreativität und Empathie stehen bei meiner Arbeit an erster Stelle.</p>
-        <img src="images/kenzie-kraft-aA1k04PswEw-unsplash.jpg" alt=Logo Style="width: 600px; height: 400px; object-fit: cover;">
-        <img src="images/alice-hartrick-0Epkj3JItao-unsplash.jpg" alt=Logo Style="width: 600px; height: 400px; object-fit: cover;">
+        <img src="images/kenzie-kraft-aA1k04PswEw-unsplash.jpg" alt=Logo Class="600x400_image">
+        <img src="images/alice-hartrick-0Epkj3JItao-unsplash.jpg" alt=Logo Class="600x400_image">
     </section>
     
     <section class="full_width">
@@ -56,30 +53,12 @@
             </li>
             
         </ul>
-        <img src="images/mediaecke-qcJU5_0vbOY-unsplash.jpg" Style="width: 600px; height: 400px; object-fit: cover;">
-        <img src="images/tim-schmidbauer-WMNXsPlw4YY-unsplash.jpg" alt=Logo Style="width: 600px; height: 400px; object-fit: cover;">
+        <img src="images/mediaecke-qcJU5_0vbOY-unsplash.jpg" Class="600x400_image">
+        <img src="images/tim-schmidbauer-WMNXsPlw4YY-unsplash.jpg" alt=Logo Class="600x400_image">
     </section>
-    
-    <script>
-        var acc = document.getElementsByClassName("accordion_title");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-    </script>
-    
     <footer>
-        <img  src="images/facebook.png" alt=Buchung Style="width: 40px; height: 40px;">
-        <img  src="images/insta.png" alt=Buchung Style="width: 40px; height: 40px;">
+        <img  src="images/facebook.png" alt=Buchung Class="Social_media_icon">
+        <img  src="images/insta.png" alt=Buchung Class="Social_media_icon">
         <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
