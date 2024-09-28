@@ -29,37 +29,62 @@
 
         <main>
 
-            <section>
-                <form class="booking_form">
-                    <div class="form_row">
-                        <label for="theme">Thema</label>
-                        <select name="theme" id="theme">
-                            <option value="">Bitte auswählen</option>
-                            <option value="portrait">Porträt</option>
-                            <option value="family">Familie</option>
-                            <option value="wedding">Hochzeit</option>
-                            <option value="realstate">Immobilien</option>
-                          </select>
-                        <label for="date_time">Datum und Uhrzeit</label>
-                        <input type="datetime-local" id="date_time" name="date_time" min="20124-08-20T00:00" >
-                        <label for="place">Ort</label>
-                        <input type="text" id="theme" name="theme">
-                    </div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">Email Adresse</label>
-                    <input type="text" id="email" name="email">
-                    <label for="telefon">Telefonnummer</label>
-                    <input type="text" id="telefon" name="telefon"><br>
-                    <label for="message" class="message">Nachricht</label>
-                    <input type="text" id="message" name="message"><br>
-                    <input type="submit" value="Senden">
-                </form>
-            </section>
-
-            <figure class="half_width">
-                <img src="images/renata-adrienn-ebvCsRypmxM-unsplash.jpg" Class="600x400_image">
+            <figure class="gallery">
+                <div class="full-img">
+                    <img
+                        class="displayed-img"
+                        src="images/gallery/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
+                        alt="Porträt_1" />
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery_bar"></div>
             </figure>
+
+            <figure class="gallery"></figure>
+                <div class="full-img">
+                    <img
+                        class="displayed-img"
+                        src="images/gallery/drew-coffman-llWjwo200fo-unsplash.jpg"
+                        alt="Familie_1" />
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery_bar"></div>
+            </figure>
+
+            <figure class="gallery"></figure>
+                <div class="full-img">
+                    <img
+                        class="displayed-img"
+                        src="images/gallery/jessica-rockowitz-gl50agg5AUI-unsplash.jpg"
+                        alt="Hochzeit_1" />
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery_bar"></div>
+            </figure>
+
+            <figure class="gallery"></figure>
+            <div class="full-img">
+                <img
+                    class="displayed-img"
+                    src="images/gallery/brian-babb-XbwHrt87mQ0-unsplash.jpg"
+                    alt="Immobilien_1" />
+                <div class="overlay"></div>
+            </div>
+            <div class="gallery_bar"></div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+        </figure>
         </main>
 
         <footer class="footer">
