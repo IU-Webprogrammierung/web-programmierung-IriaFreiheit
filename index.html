@@ -1,54 +1,72 @@
 <!doctype html>
 <html lang="de">
-<head>
-<meta name="author" content="Iria Freiheit" />
-<meta name="description" content="Dies ist eine fiktive Website über eine fiktive Fotografin namens Lea Marie." />
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-</head>
-<body>
-    <div>
-        <img src="images/logo.png" alt=Logo class="Logo">
-        <nav>
-            <div class=card_quarter>
-                <a href="ueber_mich.html"><img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber mich Class="card_260x400_image"><h2>Über mich</h2></a>
-            </div>
-            <div class=card_quarter>
-                <a href="buchungsportal.html"><img  src="images/renata-adrienn-ebvCsRypmxM-unsplash.jpg" alt=Buchung Class="card_260x400_image"><h2>Buchung</h2></a>
-            </div>
-            <div class=card_quarter>
-                <a href="Galerie.html"><img  src="images/jessica-rockowitz-JFgDZBIyW7Y-unsplash.jpg" alt=Galerie Class="card_260x400_image"><h2>Galerie</h2></a>
-            </div>
-            <div class=card_quarter>
-                <a href="preise.html"><img  src="images/joonas-sild-ROHCkpDsFWA-unsplash.jpg" alt=Buchung Class="card_260x400_image"><h2>Preise</h2></a>
-            </div>
-        </nav>
-    </div>
-    <main>
-        <h1>Kontakt</h1>
-        <form class=contact_form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email Adresse:</label>
-            <input type="text" id="email" name="email">
-            <label for="telefon">Telefonnummer:</label>
-            <input type="text" id="telefon" name="telefon"><br>
-            <label for="Nachricht">Nachricht:</label>
-            <input type="text" id="Nachricht" name="Nachricht"><br>
-            <input type="submit" value="Senden">
-          </form>
-        <div class=card_half>
-            <img src="images/Karte.png" alt=Buchung Class="600x400_image">
-            <h3>Jessnerstraße 7</h3>
-            <h3>100234 Berlin</h3>
-            <h3>555 9678 99</h3>
+    <head>
+        <meta charset="utf-8" />
+        <title>About me</title>
+        <meta name="author" content="Iria Freiheit" />
+        <meta name="description" content="This is a website about the work of the fake photographer Lea Marie. This is the about me site." />
+        <meta name="viewport" content="width=device-width" />
+        <meta property="og:title" content="Lea Marie Photographie. About me" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="my-css-file.css" />
+        <script src="my-js-file.js" defer></script>
+    </head>
+
+    <body>
+        
+        <div>
+            <img src="images/logo.png" alt=Logo class="Logo">
+            <nav>
+                <div class=card_quarter>
+                    <a href="ueber_mich.html"><img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber mich Class="card_260x400_image"><h2>Über mich</h2></a>
+                </div>
+                <div class=card_quarter>
+                    <a href="buchungsportal.html"><img  src="images/renata-adrienn-ebvCsRypmxM-unsplash.jpg" alt=Buchung Class="card_260x400_image"><h2>Buchung</h2></a>
+                </div>
+                <div class=card_quarter>
+                    <a href="Galerie.html"><img  src="images/jessica-rockowitz-JFgDZBIyW7Y-unsplash.jpg" alt=Galerie Class="card_260x400_image"><h2>Galerie</h2></a>
+                </div>
+                <div class=card_quarter>
+                    <a href="preise.html"><img  src="images/joonas-sild-ROHCkpDsFWA-unsplash.jpg" alt=Buchung Class="card_260x400_image"><h2>Preise</h2></a>
+                </div>
+            </nav>
         </div>
-        <footer>
-            <img  src="images/facebook.png" alt=Buchung Class="Social_media_icon">
-            <img  src="images/insta.png" alt=Buchung Class="Social_media_icon">
-            <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
-        </footer>
+
+        <main>
+            <h1>Kontakt</h1>
+            <form class=contact_form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email Adresse:</label>
+                <input type="text" id="email" name="email">
+                <label for="telefon">Telefonnummer:</label>
+                <input type="text" id="telefon" name="telefon"><br>
+                <label for="Nachricht">Nachricht:</label>
+                <input type="text" id="Nachricht" name="Nachricht"><br>
+                <input type="submit" value="Senden">
+            </form>
+            <div class=card_half>
+                <img src="images/Karte.png" alt=Buchung Class="600x400_image">
+                <h3>Jessnerstraße 7</h3>
+                <h3>100234 Berlin</h3>
+                <h3>555 9678 99</h3>
+            </div>
         </main>
-</body>
+
+        <footer class="footer">
+            <div class="footer_top">
+                <img  src="images/facebook.png" alt=Buchung Class="Social_media_icon">
+                <img  src="images/insta.png" alt=Buchung Class="Social_media_icon">
+            </div>
+            <div class="footer_middle"></div>
+                <a href="/datenschutz" class="footer_link">Datenschuz</a>
+                <a href="/agb" class="footer_link">AGB</a>
+                <a href="/impressum" class="footer_link">Impressum</a>
+            </div>
+            <div class="footer_bottom">
+                <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
+            </div>
+        </footer>
+    </body>
 </html>
 
