@@ -18,6 +18,21 @@
             <img src="images/logo.png" alt=Logo class="Logo">
         </header>
 
+        <!--this is the hamburger menu for mobile and tablet-->
+
+        <label class="hamburger-menu"></label>
+            <input type="checkbox">
+        </label>
+
+        <aside class="sidebar">
+            <a href="ueber_mich.html" class="hambuger_list">Über mich</a>         
+            <a href="buchungsportal.html" class="hambuger_list">Buchung</a>
+            <a href="Galerie.html" h2 class="hambuger_list">Galerie</a>
+            <a href="preise.html" h2 class="hambuger_list">Preise</a>
+        </aside>
+
+        <!--this is the navigation bar for desktop-->
+
         <nav>
             <ul>
                 <li><a href="Über_mich.html"><h2>Über mich</h2></a></li>
@@ -29,16 +44,22 @@
         
         <main>
 
+            <h1>Über mich</h1>
+
             <article class="text_standard">
                 <p>Hi, ich bin Lea Marie, 26 Jahre alt und ausgebildete Fotografin. Schon als Kind habe ich meine Liebe zur Fotografie entdeckt, als ich die alte Kamera meines Vaters ausprobiert habe. Diese Leidenschaft hat mich nie losgelassen, und nach der Schule habe ich eine Ausbildung zur Fotografin gemacht. Heute arbeite ich freiberuflich und habe mich auf Porträts spezialisiert. Es begeistert mich, echte, ungestellte Momente einzufangen und Menschen so darzustellen, wie sie wirklich sind. Meine Kamera ist mein ständiger Begleiter, egal ob auf Reisen oder im Alltag. Am liebsten fotografiere ich draußen, wo das natürliche Licht meinen Bildern eine besondere Atmosphäre verleiht.<br>Neben der Fotografie liebe ich es, neue Orte zu entdecken und mich von unterschiedlichen Kulturen und Landschaften inspirieren zu lassen. Jede Reise bringt neue Geschichten und Begegnungen, die ich mit meiner Kamera festhalte. Ich bin ständig auf der Suche nach neuen Perspektiven und einzigartigen Motiven. Außerdem arbeite ich eng mit meinen Kunden zusammen, um ihre Visionen und Wünsche in meinen Bildern zum Leben zu erwecken. Kreativität und Empathie stehen bei meiner Arbeit an erster Stelle.</p>
             </article>
 
-            <figure class="half_width">
+            <!--this is a responsive_container for images-->
+
+            <figure class="image_container_animated">
                 <img src="images/kenzie-kraft-aA1k04PswEw-unsplash.jpg" alt=Logo Class="600x400_image">
                 <img src="images/alice-hartrick-0Epkj3JItao-unsplash.jpg" alt=Logo Class="600x400_image">
             </figure>
+
+            <!--this is a responsive container for accordion menu-->
             
-            <section class="half_width">
+            <section class="accordion_container">
                 <ul class="accordion">
                     <li>
                         <button class="accordion_title"></h3>Woher komme ich?</h3></button>
@@ -70,23 +91,44 @@
                 </ul>
             </section>
 
-            <figure class="half_width">
+            <!--this is a responsive_container for images-->
+
+            <figure class="image_container_animated">
                 <img src="images/mediaecke-qcJU5_0vbOY-unsplash.jpg" Class="600x400_image">
                 <img src="images/tim-schmidbauer-WMNXsPlw4YY-unsplash.jpg" alt=Logo Class="600x400_image">
             </figure>
         </main>
 
-        <footer class="footer">
-            <div class="footer_top">
+        <!--this is the footer for mobile-->
+
+        <footer class="footer_mobile">
+            <div class="footer_1">
                 <img  src="images/facebook.png" alt=Buchung Class="Social_media_icon">
                 <img  src="images/insta.png" alt=Buchung Class="Social_media_icon">
             </div>
-            <div class="footer_left"></div>
+            <div class="footer_2"></div>
                 <a href="/datenschutz" class="footer_link">Datenschutz</a>
                 <a href="/agb" class="footer_link">AGB</a>
                 <a href="/impressum" class="footer_link">Impressum</a>
             </div>
-            <div class="footer_right">
+            <div class="footer_3">
+                <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
+            </div>
+        </footer>
+
+        <!--this is the footer for desktop and tablet-->
+
+        <footer class="footer_desktop_tablet">
+            <div class="footer_1">
+                <img  src="images/facebook.png" alt=Buchung Class="Social_media_icon">
+                <img  src="images/insta.png" alt=Buchung Class="Social_media_icon">
+            </div>
+            <div class="footer_2"></div>
+                <a href="/datenschutz" class="footer_link">Datenschutz</a>
+                <a href="/agb" class="footer_link">AGB</a>
+                <a href="/impressum" class="footer_link">Impressum</a>
+            </div>
+            <div class="footer_3">
                 <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
             </div>
         </footer>
