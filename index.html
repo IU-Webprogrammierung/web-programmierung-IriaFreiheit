@@ -14,27 +14,84 @@
 
     <body>
         
-        <div>
+        <div class="top_image_w_logo">
             <img src="images/logo.png" alt=Logo class="Logo">
-            <nav>
-                <div class=card_quarter>
-                    <a href="ueber_mich.html"><img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber mich Class="card_260x400_image"><h2>Über mich</h2></a>
-                </div>
-                <div class=card_quarter>
-                    <a href="buchungsportal.html"><img  src="images/renata-adrienn-ebvCsRypmxM-unsplash.jpg" alt=Buchung Class="card_260x400_image"><h2>Buchung</h2></a>
-                </div>
-                <div class=card_quarter>
-                    <a href="Galerie.html"><img  src="images/jessica-rockowitz-JFgDZBIyW7Y-unsplash.jpg" alt=Galerie Class="card_260x400_image"><h2>Galerie</h2></a>
-                </div>
-                <div class=card_quarter>
-                    <a href="preise.html"><img  src="images/joonas-sild-ROHCkpDsFWA-unsplash.jpg" alt=Buchung Class="card_260x400_image"><h2>Preise</h2></a>
-                </div>
-            </nav>
         </div>
 
-        <main>
+        <label class="hamburger-menu"></label>
+            <input type="checkbox">
+        </label>
+
+        <aside class="sidebar">
+            <a href="ueber_mich.html" class="hambuger_list">Über mich</a>         
+            <a href="buchungsportal.html" class="hambuger_list">Buchung</a>
+            <a href="Galerie.html" h2 class="hambuger_list">Galerie</a>
+            <a href="preise.html" h2 class="hambuger_list">Preise</a>
+        </aside>
+
+
+        <h2>Herzlich willkommen auf meiner Webseite! Ich bin Lea Marie, Fotografin aus Berlin, spezialisiert auf Porträts und Hochzeitsfotografie. Hier findest du eine Auswahl meiner Arbeiten, die echte, ungestellte Momente einfangen. Ich lade dich ein, durch meine Galerien zu stöbern und dich inspirieren zu lassen. Viel Freude beim Entdecken!</h2>
+
+
+        <nav>
+            <div class=card>
+                <a href="ueber_mich.html"><img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber mich Class="card_260x400_image"><h2>Über mich</h2></a>
+            </div>
+            <div class=card>
+                <a href="buchungsportal.html"><img  src="images/renata-adrienn-ebvCsRypmxM-unsplash.jpg" alt=Buchung Class="card_260x400_image"><h2>Buchung</h2></a>
+            </div>
+            <div class=card>
+                <a href="Galerie.html"><img  src="images/jessica-rockowitz-JFgDZBIyW7Y-unsplash.jpg" alt=Galerie Class="card_260x400_image"><h2>Galerie</h2></a>
+            </div>
+            <div class=card>
+                <a href="preise.html"><img  src="images/joonas-sild-ROHCkpDsFWA-unsplash.jpg" alt=Buchung Class="card_260x400_image"><h2>Preise</h2></a>
+            </div>
+        </nav>
+
+
+
+        <div class=card>
+            <a href="ueber_mich.html"><img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber mich Class="card_260x400_image"><h2>Über mich</h2></a>
+        </div>
+    
+
+        <main class="contact_container">
+
             <h1>Kontakt</h1>
-            <form class=contact_form>
+
+            <section class="accordion_container">
+                <ul class="accordion">
+                    <li>
+                        <button class="accordion_title">Kontaktformular</h3></button>
+                        <div class="panel">
+                            <form class=contact_form_mobile_tablet>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name"><br>
+                                <label for="email">Email Adresse:</label>
+                                <input type="text" id="email" name="email">
+                                <label for="telefon">Telefonnummer:</label>
+                                <input type="text" id="telefon" name="telefon"><br>
+                                <label for="Nachricht">Nachricht:</label>
+                                <input type="text" id="Nachricht" name="Nachricht"><br>
+                                <input type="submit" value="Senden">
+                            </form>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <Button class="accordion_title"><h3>Adresse</h3></button>
+                        <div class="panel">
+                            <img src="images/Karte.png" alt=Buchung Class="600x400_image">
+                            <h3>Jessnerstraße 7</h3>
+                            <h3>100234 Berlin</h3>
+                            <h3>555 9678 99</h3> 
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+
+            <form class=contact_form_desktop>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"><br>
                 <label for="email">Email Adresse:</label>
@@ -45,28 +102,29 @@
                 <input type="text" id="Nachricht" name="Nachricht"><br>
                 <input type="submit" value="Senden">
             </form>
-            <div class=card_half>
+            <div class=adress_container>
                 <img src="images/Karte.png" alt=Buchung Class="600x400_image">
                 <h3>Jessnerstraße 7</h3>
                 <h3>100234 Berlin</h3>
                 <h3>555 9678 99</h3>
             </div>
-        </main>
+        
 
-        <footer class="footer">
-            <div class="footer_top">
-                <img  src="images/facebook.png" alt=Buchung Class="Social_media_icon">
-                <img  src="images/insta.png" alt=Buchung Class="Social_media_icon">
-            </div>
-            <div class="footer_left"></div>
-                <a href="/datenschutz" class="footer_link">Datenschutz</a>
-                <a href="/agb" class="footer_link">AGB</a>
-                <a href="/impressum" class="footer_link">Impressum</a>
-            </div>
-            <div class="footer_right">
-                <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
-            </div>
-        </footer>
+            <footer class="footer">
+                <div class="footer_top">
+                    <img  src="images/facebook.png" alt=Buchung Class="Social_media_icon">
+                    <img  src="images/insta.png" alt=Buchung Class="Social_media_icon">
+                </div>
+                <div class="footer_left"></div>
+                    <a href="/datenschutz" class="footer_link">Datenschutz</a>
+                    <a href="/agb" class="footer_link">AGB</a>
+                    <a href="/impressum" class="footer_link">Impressum</a>
+                </div>
+                <div class="footer_right">
+                    <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
+                </div>
+            </footer>
+        </main>
     </body>
 </html>
 
