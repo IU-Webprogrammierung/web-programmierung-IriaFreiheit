@@ -1,27 +1,69 @@
-.index_top {
-    position: static;
-    height: 1080px;
+/* || General styles */
+
+main {
+    background-color: rgb(185, 166, 141);
+    height: auto;
+    margin: 0px;
 }
+
+li{
+    list-style-type:none;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    color: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+html {
+    font-family: "montserrat", sans-serif;
+}
+
+/* ...*/
+
+/* || Element styles */
+
+.welcome {
+    padding: 30px;
+    text-align: center;
+    left: 50%;
+}
+
+.index_top {
+    height: 50vh;
+}
+
 .logo {
     height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 50px;
+    max-width: 100%;
 }
+
 .bg_video {
     position: absolute;
     top: 0;
     left: 0;
-    width: fit-content;
     z-index: -1;
+    max-width: 100%;
 }
+
 .text_bottom_center {
     position: static;
     left: 50%;
     text-align: center;
     padding: 50px;
 }
+
 .card_navigation {
     display: flex;
     flex-direction: row;
@@ -29,14 +71,141 @@
     padding: 50px;
     position: static;
     justify-content: space-between;
+    column-gap: 50px;
+    margin-bottom: 100px;
 }
-.card_260x400_image {
+
+.card_260x400 {
     width: 260px;
     height: 400px;
+    position: relative;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    position: static;
 }
-.main {
-    background-color: rgb(185, 166, 141);
-    height: auto;
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(52, 52, 52, 0.6);
+    transition: 1s;
 }
+
+.card_260x400:hover .overlay{
+    opacity: 1;
+}
+
+.card_260x400:hover {
+    transform: scale(1.1);
+}
+
+.card_260x400_mobile {
+    display: block;
+    text-align: center;
+    width: 260px;
+    height: 400px;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.contact_container {
+    background-color: rgb(214, 202, 187);
+}
+
+.panel {
+    width: 800px;
+    height: 600px;
+    position: relative;
+}
+
+.karte {
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+
+.s {
+    width: 100%;
+    height: 100%;
+    object-fit:cover
+
+}
+/* … */
+
+/* || Typography */
+
+@font-face {
+    font-family: "montserrat";
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+html {
+    font-family: "montserrat", sans-serif;
+}
+
+h1{
+    font-size: 45px;
+    color: black;
+    font-style: normal;
+    display: block;
+    padding: 50px;
+    text-align: center;
+}
+
+h2{
+    font-size: 35px;
+    color: black;
+    font-style: normal;
+}
+
+h3{
+    font-size: 25px;
+    color: black;
+    font-style: normal;
+}
+
+p{
+    font-size: 15px;
+    color: black;
+    font-style: normal;
+}
+
+.welcome_text{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    font-display: block;
+    line-height: 2;
+}
+
+.card_260x400 h2 {
+    color: beige;
+    font-size: 25px;
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card_260x400_mobile h2{
+    text-align: center;
+    color: beige;
+}
+
+
+/* … */
+
+
