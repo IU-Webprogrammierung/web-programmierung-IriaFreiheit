@@ -10,8 +10,7 @@
         <link rel="stylesheet" href="mystyle.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="icon" href="images/favicon_light.ico" type="icon" media="(prefers-color-scheme: light)">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="icon" href="images/favicon_light.ico" type="icon" media="(prefers-color-scheme: light)">
         <link rel="icon" href="images/favicon_dark.ico" type="icon" media="(prefers-color-scheme: dark)">
         <script src="my-js-file.js" defer></script>
     </head>
@@ -40,53 +39,59 @@
         
         <main>
 
-            <!--this is the welcome text-->
+            <section class="text_n_nav">
 
-            <div class="text_bottom_center">
-                <h2>Herzlich willkommen auf meiner Webseite! Ich bin Lea Marie, Fotografin aus Berlin, spezialisiert auf Porträts und Hochzeitsfotografie. Hier findest du eine Auswahl meiner Arbeiten, die echte, ungestellte Momente einfangen. Ich lade dich ein, durch meine Galerien zu stöbern und dich inspirieren zu lassen. <br> Viel Freude beim Entdecken!</h2>
-            </div>
+                <!--this is the welcome text-->
 
-            <!--this is the navigation bar for desktop-->
+                <div class="welcome">
+                    <h3 class="welcome_text">Herzlich willkommen auf meiner Webseite! Ich bin Lea Marie, Fotografin aus Berlin, spezialisiert auf Porträts und Hochzeitsfotografie.<br> Hier findest du eine Auswahl meiner Arbeiten, die echte, ungestellte Momente einfangen. <br> Ich lade dich ein, durch meine Galerien zu stöbern und dich inspirieren zu lassen. <br> Viel Freude beim Entdecken!</h3>
+                </div>
 
-            <div class="card_navigation">
-                <div>
-                    <a href="ueber_mich.html">
-                        <img src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber_mich class="card_260x400_image">
+                <!--this is the navigation bar for desktop-->
+
+                <div class="card_navigation">
+                    <a href="ueber_mich.html" class="card_260x400">
+                        <img src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber_mich class="card_image">
+                        <div class="overlay">
+                            <h2>Über mich</h2>
+                        </div>
+                    </a>
+                    
+                    <a href="buchungsportal.html" class="card_260x400">
+                        <img src="images/renata-adrienn-ebvCsRypmxM-unsplash.jpg" alt=Buchung class="card_image">
+                        <div class="overlay">
+                            <h2>Buchung</h2>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="Galerie.html" class="card_260x400">
+                        <img src="images/jessica-rockowitz-JFgDZBIyW7Y-unsplash.jpg" alt=Galerie class="card_image">
+                        <div class="overlay">
+                            <h2>Galerie</h2>
+                        </div>
+                    </a>
+                                        
+                    <a href="preise.html" class="card_260x400">
+                        <img src="images/joonas-sild-ROHCkpDsFWA-unsplash.jpg" alt=Buchung class="card_image">
+                        <div class="overlay">
+                            <h2>Preise</h2>
+                        </div>
+                    </a>
+                    
+                </div>
+            </section>
+            
+            <section>
+                
+                <!--this is the about me card for mobile and table-->
+
+                <a href="ueber_mich.html" class="card_260x400_mobile">
+                        <img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber_mich class="card_image">
                         <h2>Über mich</h2>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="buchungsportal.html">
-                        <img src="images/renata-adrienn-ebvCsRypmxM-unsplash.jpg" alt=Buchung class="card_260x400_image">
-                        <h2>Buchung</h2>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="Galerie.html">
-                        <img src="images/jessica-rockowitz-JFgDZBIyW7Y-unsplash.jpg" alt=Galerie class="card_260x400_image">
-                        <h2>Galerie</h2>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="preise.html">
-                        <img src="images/joonas-sild-ROHCkpDsFWA-unsplash.jpg" alt=Buchung class="card_260x400_image">
-                        <h2>Preise</h2>
-                    </a>
-                </div>
-            </div>
-
-            <!--this is the about me card for mobile and table-->
-
-            <div class="card_260_400_image">
-                <a href="ueber_mich.html">
-                    <img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber_mich class="card_260x400_image">
-                    <h2>Über mich</h2>
                 </a>
-            </div>
-        
+                
+            </section>        
 
             <div class="contact_container">
 
@@ -116,10 +121,15 @@
                         <li>
                             <Button class="accordion_title"><h3>Adresse</h3></button>
                             <div class="panel">
-                                <img src="images/Karte.png" alt=Buchung Class="600x400_image">
-                                <h3>Jessnerstraße 7</h3>
-                                <h3>100234 Berlin</h3>
-                                <h3>555 9678 99</h3> 
+                                <div class="karte">
+                                    <img src="images/Karte.png" alt=Buchung Class="image_600_400">
+                                </div>
+                                <div>
+                                    <h3>Jessnerstraße 7</h3>
+                                    <h3>100234 Berlin</h3>
+                                    <h3>555 9678 99</h3>  
+                                </div>
+                                
                             </div>
                         </li>
                     </ul>
