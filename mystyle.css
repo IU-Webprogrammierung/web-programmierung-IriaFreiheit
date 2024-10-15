@@ -1,12 +1,11 @@
 /* || General styles */
 
 main {
-    background-color: rgb(185, 166, 141);
     height: auto;
     margin: 0px;
 }
 
-li{
+li {
     list-style-type:none;
 }
 
@@ -26,9 +25,48 @@ html {
     font-family: "montserrat", sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 /* ...*/
 
 /* || Element styles */
+
+.hamburger-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #000000;
+    background-color: #000000e6;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.hm_content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hamburger-menu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 .welcome {
     padding: 30px;
@@ -55,6 +93,10 @@ html {
     left: 0;
     z-index: -1;
     max-width: 100%;
+}
+
+.text_n_nav {
+    background-color: #b9a68d;
 }
 
 .text_bottom_center {
@@ -85,6 +127,7 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .overlay {
@@ -96,11 +139,12 @@ html {
     height: 100%;
     width: 100%;
     opacity: 0;
-    background-color: rgba(52, 52, 52, 0.6);
+    background-color: #34343499;
     transition: 1s;
+    border-radius: 10px;
 }
 
-.card_260x400:hover .overlay{
+.card_260x400:hover .overlay {
     opacity: 1;
 }
 
@@ -108,37 +152,121 @@ html {
     transform: scale(1.1);
 }
 
-.card_260x400_mobile {
-    display: block;
-    text-align: center;
-    width: 260px;
+.card_300x500_mobile {
+    display: flex;
+    align-items: center;
+    max-width: 280px;
     height: 400px;
-    padding: 50px;
-    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #34343499;
 }
 
 .contact_container {
-    background-color: rgb(214, 202, 187);
+    background-color: #d6cabb;
 }
 
-.panel {
-    width: 800px;
-    height: 600px;
-    position: relative;
-}
-
-.karte {
-    width: 600px;
-    height: 400px;
-    position: relative;
-}
-
-.s {
+input[type=text], select, textarea {
     width: 100%;
-    height: 100%;
-    object-fit:cover
-
+    padding: 12px;
+    border: 1px solid #646363;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
 }
+
+input[type=submit] {
+    background-color: #646363;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #646363;
+}
+
+.message {
+    height: 300px;
+}
+.contact_form_mobile_tablet {
+    padding: 30px;
+    background-color:#e4ded6;
+}
+
+.accordion {
+    color: #000000;
+    padding: 18px;
+    width: 80%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion_title_mobile {
+    width: 280px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.panel_mobile {
+    max-width: 280px;
+    display: noe;
+    overflow: hidden;
+}
+
+.flexbox_2_desktop {
+    display: flex;
+    display: row;
+    align-items: stretch;
+    padding: 50px;
+    position: static;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin-bottom: 100px;
+}
+
+.contact_form_desktop {
+    padding: 30px;
+    background-color:#e4ded6;
+}
+
+.Social_media_icon {
+    width: 50px;
+    padding: 10px;
+}
+
+.footer_1 {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_2 {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    justify-content: left;
+    text-align: center;
+}
+
+
+
+
+
 /* … */
 
 /* || Typography */
@@ -152,43 +280,50 @@ html {
     font-family: "montserrat", sans-serif;
 }
 
-h1{
+h1 {
     font-size: 45px;
-    color: black;
+    color: #000000;
     font-style: normal;
     display: block;
     padding: 50px;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 35px;
-    color: black;
+    color: #000000;
     font-style: normal;
 }
 
-h3{
+h3 {
     font-size: 25px;
-    color: black;
+    color: #000000;
     font-style: normal;
 }
 
-p{
-    font-size: 15px;
-    color: black;
+p {
+    font-size: 18px;
+    color: #000000;
     font-style: normal;
 }
 
-.welcome_text{
-    font-style: italic;
+.text_center {
+    text-align: center;
+}
+.text_center_title {
+    text-align: center;
+    padding: 50px;
+}
+
+.welcome_text {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 25px;
     font-display: block;
     line-height: 2;
 }
 
 .card_260x400 h2 {
-    color: beige;
+    color: #f5f5dc;
     font-size: 25px;
     line-height: 1.5;
     position: absolute;
@@ -200,9 +335,12 @@ p{
     text-align: center;
 }
 
-.card_260x400_mobile h2{
+.card_300x500_mobile h2 {
     text-align: center;
-    color: beige;
+    color: #f5f5dc;
+    transform: rotate(-180deg);
+    writing-mode: vertical-lr;
+    font-size: 40px;
 }
 
 
