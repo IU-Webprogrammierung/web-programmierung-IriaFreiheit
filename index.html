@@ -5,8 +5,8 @@
         <title>Lea Marie Photographie</title>
         <meta name="author" content="Iria Freiheit" />
         <meta name="description" content="This is a website about the work of the fictional photographer Lea Marie. This is the start site." />
-        <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-        <meta property="og:title" content="Lea Marie Photographie - Start" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Lea Marie Photographie - Start"/>
         <link rel="stylesheet" href="mystyle.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +18,16 @@
 
     <body>
         
-        <div class="index_top">
-            <img class="logo" src="images/logo.png" alt=Logo>
+        <header class="index_top">
+            <img class="logo" src="images/logo.png" alt="this is the logo of lea marie photographie">
             <video autoplay loop muted play-inline class="bg_video">
                 <source src="videos/AdobeStock_244106506.mp4">
             </video>
-        </div>
+        </header>
         
         <!--this is the hamburger menu for mobile and tablet-->
 
-        <aside class="hamburger-menu">
+        <nav class="hamburger-menu">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             
             <div class="hm_content">
@@ -36,25 +36,25 @@
                 <a href="Galerie.html" h2 class="hambuger_list"><h3>Galerie</h3></a>
                 <a href="preise.html" h2 class="hambuger_list"><h3>Preise</h3></a>
             </div>
-        </aside>
+        </nav>
 
         <span class="material-symbols-outlined" onclick="openNav()">menu</span>
         
         <main>
 
-            <section class="text_n_nav">
+            <section class="welcome_n_cards">
 
                 <!--this is the welcome text-->
 
-                <div class="welcome">
+                <article class="welcome">
                     <h3 class="welcome_text">Herzlich willkommen auf meiner Webseite!<br> Ich bin Lea Marie, Fotografin aus Berlin, spezialisiert auf Porträts und Hochzeitsfotografie.<br> Hier findest du eine Auswahl meiner Arbeiten, die echte, ungestellte Momente einfangen. <br> Ich lade dich ein, durch meine Galerien zu stöbern und dich inspirieren zu lassen. <br> Viel Freude beim Entdecken!</h3>
-                </div>
+                </article>
 
                 <!--this is the navigation bar for desktop-->
 
-                <div class="card_navigation">
+                <nav class="card_navigation">
                     <a href="ueber_mich.html" class="card_260x400">
-                        <img src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber_mich class="card_image">
+                        <img src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt="This is a photo of lea marie with a camera in her hands. The foto is a link to the about me page" class="card_image">
                         <div class="overlay">
                             <h2>Über mich</h2>
                         </div>
@@ -81,8 +81,7 @@
                             <h2>Preise</h2>
                         </div>
                     </a>
-                    
-                </div>
+                </nav>
             </section>
             
             <section>
@@ -90,13 +89,13 @@
                 <!--this is the about me card for mobile and table-->
 
                 <a href="ueber_mich.html" class="card_300x500_mobile">
-                    <img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt=Ueber_mich class="card_image">
+                    <img  src="images/kenzie-kraft-wMzdkpul8oM-unsplash.jpg" alt="Ueber_mich" class="card_image">
                     <h2>Über mich</h2>
                 </a>
                 
             </section>        
 
-            <div class="contact_container">
+            <section class="contact_container">
 
                 <h2 class="text_center_title">Kontakt</h2>
 
@@ -122,15 +121,14 @@
                         </li>
                         
                         <li>
-                            <Button class="accordion_title_mobile"><h3>Adressen & Telefonnummer</h3></button>
-                            <div class="panel">
+                            <button class="accordion_title_mobile"><h3>Adressen &amp Telefonnummer</h3></button>
+                            <address class="panel">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.7900093902385!2d13.470813177808665!3d52.51303437205923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84ef35194fda5%3A0xe60e6e86105cc10f!2sJessnerstra%C3%9Fe%207%2C%2010247%20Berlin!5e0!3m2!1sde!2sde!4v1729017725870!5m2!1sde!2sde" width="280" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 <div class="text_center">
                                     <p>+49 0555 9678 99</p>
                                     <p>info@lea_marie_photo.de</p>
-                                </div>
-                                
-                            </div>
+                                </div>    
+                            </address>
                         </li>
                     </ul>
                 </section>
@@ -140,67 +138,65 @@
                 <section class="flexbox_2_desktop">
                     <form class="contact_form_desktop">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name"><br>
+                        <input type="text" id="name_form_desk" name="name"><br>
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email_form_desk" name="email">
                         <label for="telefon">Telefonnummer:</label>
-                        <input type="text" id="telefon" name="telefon"><br>
+                        <input type="text" id="telefon_form_desk" name="telefon"><br>
                         <label for="Nachricht">Nachricht:</label>
-                        <input type="text" id="Nachricht" name="Nachricht" class="message"><br>
+                        <input type="text" id="Nachricht_form_desk" name="Nachricht" class="message"><br>
                         <input type="submit" value="Senden">
                     </form>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.7900093902385!2d13.470813177808665!3d52.51303437205923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84ef35194fda5%3A0xe60e6e86105cc10f!2sJessnerstra%C3%9Fe%207%2C%2010247%20Berlin!5e0!3m2!1sde!2sde!4v1729017725870!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                            
+
+                    <address>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.7900093902385!2d13.470813177808665!3d52.51303437205923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84ef35194fda5%3A0xe60e6e86105cc10f!2sJessnerstra%C3%9Fe%207%2C%2010247%20Berlin!5e0!3m2!1sde!2sde!4v1729017725870!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                 
                         <div class="text_center">
                             <h3>Telefonnummer</h3>
                             <p>+49 0555 9678 99</p>
                             <h3>Email</h3>
                             <p>info@lea_marie_photo.de</p>
                         </div>
-                    </div>
+                    </address>
                 </section>
             
                 <!--this is the footer for mobile-->
 
                 <footer class="footer_mobile">
-                    <div class="footer_1">
-                        <img src="images/facebook.png" alt=Buchung Class="Social_media_icon">
-                        <img src="images/insta.png" alt=Buchung Class="Social_media_icon">
-                    </div>
-                    <div class="text_center">
-                        <div>
+
+                    <footer class="footer_1">
+                        <img src="images/facebook.png" alt="Buchung" class="social_media_icon">
+                        <img src="images/insta.png" alt="Buchung" class="social_media_icon">
+                    </footer>
+
+                    <footer class="text_center">
+                        <footer>
                             <a href="/datenschutz" class="footer_2">Datenschutz</a>
                             <a href="/agb" class="footer_2">AGB</a>
                             <a href="/impressum" class="footer_2">Impressum</a>
-                        </div>
-                        <div>
-                            <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
-                        </div>
-                    </div>
+                        </footer>
+                        <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
+                    </footer>
                 </footer>
 
                 <!--this is the footer for desktop and tablet-->
 
                 <footer class="footer_desktop_tablet">
-                    <div class="footer_1">
-                        <img src="images/facebook.png" alt=Buchung Class="Social_media_icon">
-                        <img src="images/insta.png" alt=Buchung Class="Social_media_icon">
-                    </div>
 
-                    <div class="flexbox_2_desktop">
-                        <div>
+                    <footer class="footer_1">
+                        <img src="images/facebook.png" alt="Buchung" class="social_media_icon">
+                        <img src="images/insta.png" alt="Buchung" class="social_media_icon">
+                    </footer>
+
+                    <footer class="flexbox_2_desktop">
+                        <footer>
                             <a href="/datenschutz" class="footer_2">Datenschutz</a>
                             <a href="/agb" class="footer_2">AGB</a>
                             <a href="/impressum" class="footer_2">Impressum</a>
-                        </div>
-                        <div>
-                            <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
-                        </div>
-                    </div>
-                 </footer>
-            
-            </div>
+                        </footer>
+                        <p>©Copyright 2200 by nobody. Alle Rechte vorbehalten.</p>
+                    </footer>
+                </footer>
+            </section>
         </main>
     </body>
 </html>
