@@ -1,9 +1,9 @@
-/* Open when someone clicks on the hamburger element */
+/* Set the width of the side navigation to 300px */
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+  document.getElementById("mySidenav").style.width = "100%";
 }
-  
-  /* Close when someone clicks on the "x" symbol inside the overlay */
+
+/* Set the width of the side navigation to 0 */
 function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+  document.getElementById("mySidenav").style.width = "0";
 } 

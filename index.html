@@ -10,13 +10,40 @@
         <link rel="stylesheet" href="mystyle.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="icon" href="images/favicon_light.ico" type="icon" media="(prefers-color-scheme: light)">
         <link rel="icon" href="images/favicon_dark.ico" type="icon" media="(prefers-color-scheme: dark)">
         <script src="my-js-file.js" defer></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     </head>
 
     <body>
+
+        <!--this is the hamburger menu for mobile and tablet-->
+          
+        <aside id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li>
+                <a href="ueber_mich.html"><h2>Über mich</h2></a>  
+            </li>
+            <li>
+                <a href="buchungsportal.html"><h2>Buchung</h2></a>
+            </li>    
+            <li>
+                <a href="Galerie.html"><h2>Galerie</h2></a>
+            </li>
+            <li>
+                <a href="preise.html"><h2>Preise</h2></a>
+            </li> 
+        </aside>
+
+        <span class="hamburger" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>        
+        </span>
+                               
+        <!--this is the header with video-->
         
         <header class="index_top">
             <img class="logo" src="images/logo.png" alt="this is the logo of lea marie photographie">
@@ -25,20 +52,8 @@
             </video>
         </header>
         
-        <!--this is the hamburger menu for mobile and tablet-->
-
-        <nav class="hamburger-menu">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            
-            <div class="hm_content">
-                <a href="ueber_mich.html" class="hambuger_list"><h3>Über mich</h3></a>         
-                <a href="buchungsportal.html" class="hambuger_list"><h3>Buchung</h3></a>
-                <a href="Galerie.html" h2 class="hambuger_list"><h3>Galerie</h3></a>
-                <a href="preise.html" h2 class="hambuger_list"><h3>Preise</h3></a>
-            </div>
-        </nav>
-
-        <span class="material-symbols-outlined" onclick="openNav()">menu</span>
+        
+        <!--this is the main-->
         
         <main>
 
