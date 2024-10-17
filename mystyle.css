@@ -95,7 +95,7 @@ body {
     max-width: 100%;
 }
 
-.text_n_nav {
+.welcome_n_cards {
     background-color: #b9a68d;
 }
 
@@ -244,7 +244,7 @@ input[type=submit]:hover {
     background-color:#e4ded6;
 }
 
-.Social_media_icon {
+.social_media_icon {
     width: 50px;
     padding: 10px;
 }
